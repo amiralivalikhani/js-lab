@@ -2,9 +2,15 @@
 let question = prompt("would you like a cold or hot drink?");
 
 
+
+let TotalPrice;
+let NewTotalPrice;
+
+
 if (question === "cold") {
   console.log("sorry, cold drinks are sold out.");
 }
+
 
 
 else if (question === "hot") {
@@ -15,7 +21,11 @@ else if (question === "hot") {
   let PriceOfAmericano = 210;
 
 
+
+
   let choice = prompt("what's your favorit drink? (latte/cappuccino/americano)"); {
+
+
 
 
     if (choice === "latte" || choice === "cappuccino" || choice === "americano") {
@@ -24,7 +34,6 @@ else if (question === "hot") {
       let order = Number(prompt("how many cups of " + choice + "?"));
 
 
-      let TotalPrice;
 
 
       if (choice === "latte") {
@@ -79,7 +88,6 @@ else if (more === "yes") {
       let NewOrder = Number(prompt("how many cups of " + NewChoice + "?"));
 
 
-      let NewTotalPrice;
 
 
       if (NewChoice === "latte") {
@@ -109,4 +117,6 @@ else if (more === "yes") {
     }
   }
 }
+
+console.log("JAME KOL:: " + TotalPrice + NewTotalPrice)
 // end js barista
