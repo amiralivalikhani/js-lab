@@ -1,0 +1,51 @@
+/* start intertinment */
+
+
+section.funny {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+div.pictiure {
+    position: absolute;
+}
+
+
+div.game {
+    border-radius: 50%;
+    overflow: hidden;
+    animation-name: game;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+div.game:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes game {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* end intertinment */
